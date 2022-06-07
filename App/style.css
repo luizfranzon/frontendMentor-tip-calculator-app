@@ -34,6 +34,12 @@ body {
     height: 100%;
     width: 400px;
     border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 2rem;
 }
 
 .controls {
@@ -114,4 +120,38 @@ input:focus {
     position: relative;
     top: 2.375rem;
     left: .9375rem;
+}
+
+.tipAmount, .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+
+.labelName{
+    color: white;
+}
+
+.perPerson {
+    color: #28797e;
+}
+
+.value {
+    color: #29c3ae;
+    font-size: 2.5rem;
+}
+
+.labelsDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.resetButton {
+    width: 100%;
+    background-color: #9fe8df;
+    font-size: 25px;
+    border-radius: 8px;
 }
