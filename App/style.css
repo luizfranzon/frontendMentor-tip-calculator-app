@@ -18,21 +18,22 @@ body {
 }
 
 .container {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 900px;
-    height: 500px;
+    width: 56.25rem;
+    height: 31.25rem;
     background-color: rgb(255, 255, 255);
-    padding: 32px;
+    padding: 2rem;
     border-radius: 1rem;
 }
 
 .result {
     background-color: #00474b;
     height: 100%;
-    width: 400px;
+    width: 25rem;
     border-radius: 1rem;
 
     display: flex;
@@ -45,14 +46,14 @@ body {
 .controls {
     background-color: #ffffff;
     height: 100%;
-    width: 400px;
+    width: 25rem;
     border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: .1875rem;
 }
 
 .controls label {
@@ -68,13 +69,13 @@ body {
 
 .tipControls {
     display: flex;
-    gap: 8px;
+    gap: .5rem;
 
 }
 
 .tipControls button, .tipControls input {
-    width: 120px;
-    height: 50px;
+    width: 7.5rem;
+    height: 3.125rem;
     border-radius: .25rem;
     text-align: center;
     font-size: 1.375rem;
@@ -104,7 +105,7 @@ body {
 
 .peopleDiv input, .bilDiv input {
     font-size: 1.4rem;
-    padding: 12px;
+    padding: .75rem;
     text-align: right;
 }
 
@@ -113,7 +114,7 @@ body {
 }
 
 input:focus {
-    outline: #4da096 2px solid;
+    outline: #4da096 .125rem solid;
 }
 
 .personIcon, .dollarIcon {
@@ -129,7 +130,6 @@ input:focus {
 
     width: 100%;
 }
-
 
 .labelName{
     color: white;
@@ -149,9 +149,20 @@ input:focus {
     flex-direction: column;
 }
 
-.resetButton {
+.buttonsResult button:hover {
+    background-color: #ffffff;
+}
+
+.resultButton {
     width: 100%;
     background-color: #9fe8df;
-    font-size: 25px;
-    border-radius: 8px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .375rem;
+    transition: background-color 0.2s;
+    color: #00474b;
+}
+
+#calc {
+    margin-top: .9375rem;
 }
