@@ -18,27 +18,27 @@
             <div class="bilDiv flex-column">
                 <label for="">Bill</label>
                 <img class="dollarIcon" width="15" src="./assets/icon-dollar.svg" alt="">
-                <input type="text" name="" id="bill" value="00.00">
+                <input type="number" name="" id="bill" value="100">
             </div>
 
             <div class="tipControls flex-column">
                 <label for="">Select Tip %</label>
                 <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
+                    <button class="tipValue tipSelected">5%</button>
+                    <button class="tipValue">10%</button>
+                    <button class="tipValue">15%</button>
                 </div>
                 <div>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="type" placeholder="Custom" max="100" min="0" maxlength="3">
+                    <button class="tipValue">25%</button>
+                    <button class="tipValue">50%</button>
+                    <input class="tipValue" id="customTip" type="number" placeholder="Custom" max="100" min="0" maxlength="3">
                 </div>
             </div>
 
             <div class="peopleDiv flex-column">
-                <label for=""> Number of People</label>
+                <label for="">Number of People</label>
                 <img class="personIcon" width="15" src="./assets/icon-person.svg" alt="">
-                <input type="text" name="" id="" value="0">
+                <input type="number" name="" id="NOP" value="3">
             </div>
 
         </div>
@@ -51,7 +51,7 @@
                         <span class="perPerson">/person</span>
                     </div>
                     <div class="value">
-                        <span>0.00</span>
+                        <span id="tipAmountPerPerson">0.00</span>
                     </div>
                 </div>
                 <!-- Total per person -->
@@ -61,7 +61,7 @@
                         <span class="perPerson">/person</span>
                     </div>
                     <div class="value">
-                        <span>0.00</span>
+                        <span id="valuePerPerson">0.00</span>
                     </div>
                 </div>
             </div>
